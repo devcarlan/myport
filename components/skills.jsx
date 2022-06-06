@@ -17,13 +17,13 @@ export const Skills = () => {
   ]
 
   return (
-    <div className='container px-32 pb-32'>
+    <div className='container mx-auto px-32 pb-32'>
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Skills
       </h3>
       <div className='pt-16 grid grid-cols-3'>
         {skills.map((skill, i) => (
-          <div className='flex flex-col items-center p-4'>
+          <div className='flex flex-col items-center shadow-md p-4 mx-4 my-4'>
             <Image
               key={i}
               src={skill.image}

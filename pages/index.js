@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Intro from '../components/intro'
 
 export default function Home() {
   const desc = "Carlan Henry's Portfolio Website"
@@ -10,6 +11,7 @@ export default function Home() {
         <meta name='description' content={desc} />
       </Head>
       <Nav />
+      <Intro />
     </div>
   )
 }

@@ -9,7 +9,7 @@ export const Nav = () => {
   ]
 
   return (
-    <div className='lg:inline-flex min-w-full bg-slate-100 justify-between items-center'>
+    <div className='lg:inline-flex min-w-full justify-between items-center'>
       <div className='bg-emerald-600 ml-4 w-8 h-8'></div>
       <nav className='inline-flex justify-between'>
         {links.map((link, i) => (

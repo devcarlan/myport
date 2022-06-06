@@ -1,4 +1,4 @@
-const Intro = () => {
+export const Intro = () => {
   return (
     <div className='container m-auto text-center p-32'>
       <h1 className='mb-2'>
@@ -7,7 +7,7 @@ const Intro = () => {
       <h2>
         I'm a <span className='text-emerald-600'>Web Developer</span>
       </h2>
-      <p className='mt-4 px-12 text-md tracking-wide leading-relaxed'>
+      <p className='mt-4 px-12 text-md tracking-wide leading-7'>
         I am web developer with experience building fast, functional websites to
         boost lead generation as well as helping customers achieve a larger web
         presence. Technologies like Reactjs, AdobeXD, and Visual Studio Code are
@@ -18,5 +18,3 @@ const Intro = () => {
     </div>
   )
 }
-
-export default Intro

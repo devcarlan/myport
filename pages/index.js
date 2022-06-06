@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import Nav from '../components/nav'
-import Intro from '../components/intro'
+import { Nav } from '../components/nav'
+import { Intro } from '../components/intro'
+import { About } from '../components/about'
+import { Footer } from '../components/footer'
 
 export default function Home() {
   const desc = "Carlan Henry's Portfolio Website"
@@ -12,6 +14,8 @@ export default function Home() {
       </Head>
       <Nav />
       <Intro />
+      <About />
+      <Footer />
     </div>
   )
 }

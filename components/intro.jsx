@@ -12,8 +12,8 @@ export const Intro = () => {
         boost lead generation as well as helping customers achieve a larger web
         presence. Technologies like Reactjs, AdobeXD, and Visual Studio Code are
         my go-tos for building, designing, and coding. Recently my focus has
-        been on Next.js and TailwindCSS for reliably building fast, mobile
-        friendly, and easily scalable websites.
+        been on Next.js and TailwindCSS for reliably building fast, responsive,
+        mobile friendly, and easily scalable websites.
       </p>
     </div>
   )

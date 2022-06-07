@@ -1,10 +1,10 @@
 export const About = () => {
   return (
-    <div className='container mx-auto px-32'>
+    <div className='container mx-auto md:max-w-5xl md:mt-24'>
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         About Me
       </h3>
-      <p className='text-md mt-2 leading-8'>
+      <p className='text-md mt-4 leading-8 tracking-wide'>
         Web development/coding was always in my future. I grew up using
         computers and from a young age knew that I would make a career doing
         something in the budding online space we now know as the internet. As a

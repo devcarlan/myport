@@ -3,6 +3,7 @@ export const Projects = () => {
     { name: 'AMSVans' },
     { name: 'Champion Pressure Washing' },
     { name: 'Casual Streams' },
+    { name: 'Dare 2 Care' },
   ]
   return (
     <div className='container mx-auto px-32 pb-32'>

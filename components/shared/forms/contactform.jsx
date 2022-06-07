@@ -65,102 +65,74 @@ export const ContactForm = () => {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Full Name
-          <br />
-          <input
-            className='active:border-emerald-700'
-            type='text'
-            name='name'
-            value={formValues.name}
-            onChange={handleChange}
-          ></input>
-          {formErrors.name ? <p>{formErrors.name}</p> : ''}
-        </label>
-        <label>
-          Email
-          <br />
-          <input
-            type='email'
-            name='email'
-            value={formValues.email}
-            onChange={handleChange}
-          ></input>
-          {formErrors.email ? <p>{formErrors.email}</p> : ''}
-        </label>
-        <label>
-          Address
-          <br />
-          <input
-            type='text'
-            name='address'
-            value={formValues.address}
-            onChange={handleChange}
-          ></input>
-          {formErrors.address ? <p>{formErrors.address}</p> : ''}
-        </label>
-        <label>
-          City
-          <br />
-          <input
-            type='text'
-            name='city'
-            value={formValues.city}
-            onChange={handleChange}
-          ></input>
-          {formErrors.city ? <p>{formErrors.city}</p> : ''}
-        </label>
-        <label>
-          State
-          <br />
-          <input
-            type='text'
-            name='state'
-            value={formValues.state}
-            onChange={handleChange}
-          ></input>
-          {formErrors.state ? <p>{formErrors.state}</p> : ''}
-        </label>
-        <label>
-          Zip
-          <br />
-          <input
-            type='text'
-            name='zip'
-            value={formValues.zip}
-            onChange={handleChange}
-          ></input>
-          {formErrors.zip ? <p>{formErrors.zip}</p> : ''}
-        </label>
-        <label>
-          Message
-          <br />
-          <textarea
-            name='message'
-            value={formValues.message}
-            onChange={handleChange}
-          ></textarea>
-        </label>
-        {form.state === 'loading' ? (
-          <div>
-            <p className='text-md'>Sending message...</p>
-          </div>
-        ) : form.state === 'error' ? (
-          <div>
-            <p className='text-md'>{form.message}</p>
-          </div>
-        ) : form.state === 'success' ? (
-          <div className={styles.altFormStatus}>
-            <span style={{ marginRight: '10px', color: 'green' }}>
-              <FaCheckCircle className={styles.formIcon} />
-            </span>
-            <p className='text-md'>Message sent successfully.</p>
-          </div>
-        ) : (
-          <button>Send Message</button>
-        )}
-      </form>
+      <div className='bg-slate-300 mt-8 mx-auto rounded-md md:max-w-2xl'>
+        <form
+          onSubmit={handleSubmit}
+          className='flex flex-col justify-center items-center md:p-12'
+        >
+          <label className='mb-4'>
+            Full Name
+            <br />
+            <input
+              className='p-2 mt-2 focus:outline-emerald-700 rounded-md shadow-inner'
+              type='text'
+              name='name'
+              value={formValues.name}
+              onChange={handleChange}
+            ></input>
+            {formErrors.name ? <p>{formErrors.name}</p> : ''}
+          </label>
+          <label className='mb-4'>
+            Company
+            <br />
+            <input
+              type='text'
+              name='company'
+              value={formValues.company}
+              onChange={handleChange}
+            ></input>
+            {formErrors.company ? <p>{formErrors.company}</p> : ''}
+          </label>
+          <label className='mb-4'>
+            Email
+            <br />
+            <input
+              type='email'
+              name='email'
+              value={formValues.email}
+              onChange={handleChange}
+            ></input>
+            {formErrors.email ? <p>{formErrors.email}</p> : ''}
+          </label>
+          <label>
+            Message
+            <br />
+            <textarea
+              name='message'
+              value={formValues.message}
+              onChange={handleChange}
+            ></textarea>
+          </label>
+          {form.state === 'loading' ? (
+            <div>
+              <p className='text-md'>Sending message...</p>
+            </div>
+          ) : form.state === 'error' ? (
+            <div>
+              <p className='text-md'>{form.message}</p>
+            </div>
+          ) : form.state === 'success' ? (
+            <div className={styles.altFormStatus}>
+              <span style={{ marginRight: '10px', color: 'green' }}>
+                <FaCheckCircle className={styles.formIcon} />
+              </span>
+              <p className='text-md'>Message sent successfully.</p>
+            </div>
+          ) : (
+            <button>Send Message</button>
+          )}
+        </form>
+      </div>
     </div>
   )
 }

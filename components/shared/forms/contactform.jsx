@@ -65,7 +65,7 @@ export const ContactForm = () => {
   }
   return (
     <div>
-      <div className='bg-slate-300 mt-8 mx-auto rounded-md md:max-w-2xl'>
+      <div className='bg-gray-200 mt-8 mx-auto rounded-md md:max-w-2xl'>
         <form
           onSubmit={handleSubmit}
           className='flex flex-col justify-center items-center md:p-12'
@@ -74,7 +74,7 @@ export const ContactForm = () => {
             Full Name
             <br />
             <input
-              className='p-2 mt-2 focus:outline-emerald-700 rounded-md shadow-inner'
+              className='p-2 mt-2 border-none outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
               type='text'
               name='name'
               value={formValues.name}
@@ -86,6 +86,7 @@ export const ContactForm = () => {
             Company
             <br />
             <input
+              className='p-2 mt-2 outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
               type='text'
               name='company'
               value={formValues.company}
@@ -97,6 +98,7 @@ export const ContactForm = () => {
             Email
             <br />
             <input
+              className='p-2 mt-2 outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
               type='email'
               name='email'
               value={formValues.email}
@@ -104,15 +106,20 @@ export const ContactForm = () => {
             ></input>
             {formErrors.email ? <p>{formErrors.email}</p> : ''}
           </label>
-          <label>
-            Message
-            <br />
-            <textarea
-              name='message'
-              value={formValues.message}
-              onChange={handleChange}
-            ></textarea>
-          </label>
+          <div className='mt-2 mb-8 md:w-3/4'>
+            <label>
+              Message
+              <br />
+              <textarea
+                className='p-2 mt-2 w-full outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
+                name='message'
+                rows='6'
+                value={formValues.message}
+                onChange={handleChange}
+              ></textarea>
+            </label>
+          </div>
+
           {form.state === 'loading' ? (
             <div>
               <p className='text-md'>Sending message...</p>
@@ -129,7 +136,9 @@ export const ContactForm = () => {
               <p className='text-md'>Message sent successfully.</p>
             </div>
           ) : (
-            <button>Send Message</button>
+            <button className='group p-4  md:w-2/5 rounded-lg bg-emerald-500 bg-gradient-to-b hover:from-emerald-500 hover:to-emerald-700'>
+              <span className='text-md text-white'>Send Message</span>
+            </button>
           )}
         </form>
       </div>

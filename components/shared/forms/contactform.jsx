@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { validate } from '../../../utils/validate'
 
 export const ContactForm = () => {
   const initialValues = {
@@ -21,15 +22,7 @@ export const ContactForm = () => {
     e.preventDefault()
     setFormErrors(validate(formValues))
 
-    if (
-      formValues.name &&
-      formValues.email &&
-      formValues.address &&
-      formValues.city &&
-      formValues.state &&
-      formValues.zip &&
-      formValues.message
-    ) {
+    if (formValues.name && formValues.email && formValues.message) {
       setForm({ state: 'loading' })
       try {
         const res = await fetch(`api/contactme`, {
@@ -80,7 +73,11 @@ export const ContactForm = () => {
               value={formValues.name}
               onChange={handleChange}
             ></input>
-            {formErrors.name ? <p>{formErrors.name}</p> : ''}
+            {formErrors.name ? (
+              <p className='mt-2 text-sm text-red-700'>{formErrors.name}</p>
+            ) : (
+              ''
+            )}
           </label>
           <label className='mb-4'>
             Company
@@ -92,7 +89,6 @@ export const ContactForm = () => {
               value={formValues.company}
               onChange={handleChange}
             ></input>
-            {formErrors.company ? <p>{formErrors.company}</p> : ''}
           </label>
           <label className='mb-4'>
             Email
@@ -104,7 +100,11 @@ export const ContactForm = () => {
               value={formValues.email}
               onChange={handleChange}
             ></input>
-            {formErrors.email ? <p>{formErrors.email}</p> : ''}
+            {formErrors.email ? (
+              <p className='mt-2 text-sm text-red-700'>{formErrors.email}</p>
+            ) : (
+              ''
+            )}
           </label>
           <div className='mt-2 mb-8 md:w-3/4'>
             <label>
@@ -117,6 +117,13 @@ export const ContactForm = () => {
                 value={formValues.message}
                 onChange={handleChange}
               ></textarea>
+              {formErrors.message ? (
+                <p className='mt-2 text-sm text-red-700'>
+                  {formErrors.message}
+                </p>
+              ) : (
+                ''
+              )}
             </label>
           </div>
 
@@ -129,14 +136,15 @@ export const ContactForm = () => {
               <p className='text-md'>{form.message}</p>
             </div>
           ) : form.state === 'success' ? (
-            <div className={styles.altFormStatus}>
-              <span style={{ marginRight: '10px', color: 'green' }}>
-                <FaCheckCircle className={styles.formIcon} />
-              </span>
+            <div>
               <p className='text-md'>Message sent successfully.</p>
             </div>
           ) : (
-            <button className='group p-4  md:w-2/5 rounded-lg bg-emerald-500 bg-gradient-to-b hover:from-emerald-500 hover:to-emerald-700'>
+            <button
+              type='submit'
+              onClick={() => handleSubmit}
+              className='group p-4  md:w-2/5 rounded-lg bg-emerald-500 bg-gradient-to-b hover:from-emerald-500 hover:to-emerald-700'
+            >
               <span className='text-md text-white'>Send Message</span>
             </button>
           )}

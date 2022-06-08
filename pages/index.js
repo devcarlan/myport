@@ -22,7 +22,6 @@ export default function Home() {
         <Intro />
         <Skills />
         <Projects />
-        <About />
         <Contact />
       </div>
       <div className='bg-gray-200 max-w-screen-xl mx-auto'>

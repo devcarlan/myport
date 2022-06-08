@@ -10,18 +10,22 @@ import { Footer } from '../components/footer'
 export default function Home() {
   const desc = "Carlan Henry's Portfolio Website"
   return (
-    <div className='wrapper'>
-      <Head>
-        <title>Carlan Henry</title>
-        <meta name='description' content={desc} />
-      </Head>
-      <Nav />
-      <Intro />
-      <Skills />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <div className='wrapper'>
+        <Head>
+          <title>Carlan Henry</title>
+          <meta name='description' content={desc} />
+        </Head>
+        <Nav />
+        <Intro />
+        <Skills />
+        <Projects />
+        <About />
+        <Contact />
+      </div>
+      <div className='bg-gray-200'>
+        <Footer />
+      </div>
+    </>
   )
 }

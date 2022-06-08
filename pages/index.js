@@ -11,19 +11,21 @@ export default function Home() {
   const desc = "Carlan Henry's Portfolio Website"
   return (
     <>
-      <div className='wrapper'>
-        <Head>
-          <title>Carlan Henry</title>
-          <meta name='description' content={desc} />
-        </Head>
+      <Head>
+        <title>Carlan Henry</title>
+        <meta name='description' content={desc} />
+      </Head>
+      <div className='bg-gray-200 max-w-screen-xl mx-auto'>
         <Nav />
+      </div>
+      <div className='wrapper'>
         <Intro />
         <Skills />
         <Projects />
         <About />
         <Contact />
       </div>
-      <div className='bg-gray-200'>
+      <div className='bg-gray-200 max-w-screen-xl mx-auto'>
         <Footer />
       </div>
     </>

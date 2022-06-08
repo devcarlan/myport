@@ -129,7 +129,7 @@ export const ContactForm = () => {
 
           {form.state === 'loading' ? (
             <div>
-              <p className='text-md'>Sending message...</p>
+              <p className='text-md text-blue-600'>Sending message...</p>
             </div>
           ) : form.state === 'error' ? (
             <div>
@@ -137,7 +137,9 @@ export const ContactForm = () => {
             </div>
           ) : form.state === 'success' ? (
             <div>
-              <p className='text-md'>Message sent successfully.</p>
+              <p className='text-md text-green-600'>
+                Message sent successfully.
+              </p>
             </div>
           ) : (
             <button

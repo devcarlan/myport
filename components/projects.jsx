@@ -1,9 +1,11 @@
+import Image from 'next/image'
+import ams from '../components/shared/imgs/amsvans.jpg'
+import d2c from '../components/shared/imgs/d2c.jpg'
+
 export const Projects = () => {
   const projects = [
-    { name: 'AMSVans' },
-    { name: 'Champion Pressure Washing' },
-    { name: 'Casual Streams' },
-    { name: 'Dare 2 Care' },
+    { name: 'AMSVans', image: ams },
+    { name: 'Dare 2 Care', image: d2c },
   ]
   return (
     <div className='container mx-auto md:max-w-5xl md:mt-24'>
@@ -12,7 +14,15 @@ export const Projects = () => {
       </h3>
       <div>
         {projects.map((project, i) => (
-          <p key={i}>{project.name}</p>
+          <div key={i}>
+            <Image
+              src={project.image}
+              layout='intrinsic'
+              width='500'
+              height='500'
+            />
+            <p className='mt-4'>{project.name}</p>
+          </div>
         ))}
       </div>
     </div>

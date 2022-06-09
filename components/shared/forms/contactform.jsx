@@ -67,7 +67,7 @@ export const ContactForm = () => {
             Full Name
             <br />
             <input
-              className='p-2 mt-2 border-none outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
+              className='p-2 mt-2 border-none outline-none rounded-md shadow-md focus:shadow-emerald-500 focus:outline-emerald-500 focus:outline-[.1em] focus:outline-offset-0'
               type='text'
               name='name'
               value={formValues.name}
@@ -83,7 +83,7 @@ export const ContactForm = () => {
             Company
             <br />
             <input
-              className='p-2 mt-2 outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
+              className='p-2 mt-2 border-none outline-none rounded-md shadow-md focus:shadow-emerald-500 focus:outline-emerald-500 focus:outline-[.1em] focus:outline-offset-0'
               type='text'
               name='company'
               value={formValues.company}
@@ -94,7 +94,7 @@ export const ContactForm = () => {
             Email
             <br />
             <input
-              className='p-2 mt-2 outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
+              className='p-2 mt-2 border-none outline-none rounded-md shadow-md focus:shadow-emerald-500 focus:outline-emerald-500 focus:outline-[.1em] focus:outline-offset-0'
               type='email'
               name='email'
               value={formValues.email}
@@ -111,7 +111,7 @@ export const ContactForm = () => {
               Message
               <br />
               <textarea
-                className='p-2 mt-2 w-full outline-none focus:outline-emerald-500 focus:outline-[.2em] focus:outline-offset-0 rounded-md shadow-md'
+                className='p-2 mt-2 w-full border-none outline-none rounded-md shadow-md focus:shadow-emerald-500 focus:outline-emerald-500 focus:outline-[.1em] focus:outline-offset-0'
                 name='message'
                 rows='6'
                 value={formValues.message}

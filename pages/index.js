@@ -24,8 +24,11 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
+        <div className='md:hidden'>
+          <Footer />
+        </div>
       </div>
-      <div className='bg-gray-200 max-w-screen-xl mx-auto'>
+      <div className='hidden max-w-screen-xl mx-auto md:block'>
         <Footer />
       </div>
     </>

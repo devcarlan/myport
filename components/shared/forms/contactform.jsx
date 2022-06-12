@@ -58,7 +58,7 @@ export const ContactForm = () => {
   }
   return (
     <div>
-      <div className='bg-gray-200 mt-8 mx-auto rounded-md md:max-w-2xl'>
+      <div className='bg-gray-200 py-8 mt-8 mx-auto rounded-md md:max-w-2xl md:py-0'>
         <form
           onSubmit={handleSubmit}
           className='flex flex-col justify-center items-center md:p-12'
@@ -106,7 +106,7 @@ export const ContactForm = () => {
               ''
             )}
           </label>
-          <div className='mt-2 mb-8 md:w-3/4'>
+          <div className='w-3/4 mt-2 mb-8'>
             <label>
               Message
               <br />

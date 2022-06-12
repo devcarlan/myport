@@ -8,11 +8,11 @@ export const Projects = () => {
     { name: 'Dare 2 Care Outreach', image: d2c },
   ]
   return (
-    <div className='mt-10 px-4 container mx-auto md:max-w-5xl md:mt-24'>
+    <div className='mt-12 px-4 container mx-auto md:max-w-5xl md:mt-24'>
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Projects
       </h3>
-      <div className='flex flex-col pt-16 justify-between md:flex-row'>
+      <div className='flex flex-col pt-8 justify-between md:flex-row md:pt-16'>
         {projects.map((project, i) => (
           <div
             key={i}

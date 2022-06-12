@@ -1,6 +1,6 @@
 export const Intro = () => {
   return (
-    <div className='pt-10 container m-auto flex flex-col justify-around items-center text-center md:pt-24 md:max-w-5xl '>
+    <div className='pt-12 container m-auto flex flex-col justify-around items-center text-center md:pt-24 md:max-w-5xl '>
       <h1 className='text-4xl tracking-wide md:m-4 md:text-5xl md:tracking-normal'>
         Hi, I'm <span className='text-emerald-600'>Carlan.</span>
       </h1>

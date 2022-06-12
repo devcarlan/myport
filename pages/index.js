@@ -14,6 +14,7 @@ export default function Home() {
       <Head>
         <title>Carlan Henry</title>
         <meta name='description' content={desc} />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
       <div className='bg-gray-200 max-w-screen-xl mx-auto'>
         <Nav />

@@ -17,11 +17,11 @@ export const Skills = () => {
   ]
 
   return (
-    <div className='container mx-auto md:max-w-5xl md:mt-24'>
+    <div className='mt-10 px-4 container mx-auto md:max-w-5xl md:mt-24'>
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Skills
       </h3>
-      <div className='pt-16 flex flex-wrap justify-center items-center'>
+      <div className='pt-8 md:pt-16 flex flex-wrap justify-center items-center'>
         {skills.map((skill, i) => (
           <div
             key={i}

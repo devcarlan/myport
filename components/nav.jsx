@@ -1,10 +1,6 @@
 import { useRef } from 'react'
 
 export const Nav = () => {
-  const skills = useRef(null)
-  const projects = useRef(null)
-  const contact = useRef(null)
-
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -12,11 +8,7 @@ export const Nav = () => {
     })
   }
 
-  const links = [
-    { name: 'Skills', section: skills },
-    { name: 'Projects', section: projects },
-    { name: 'Contact', section: contact },
-  ]
+  const links = [{ name: 'Skills' }, { name: 'Projects' }, { name: 'Contact' }]
 
   return (
     <div className='inline-flex min-w-full justify-between items-center py-4'>

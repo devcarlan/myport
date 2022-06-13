@@ -1,11 +1,21 @@
-import Link from 'next/link'
+import { useRef } from 'react'
 
 export const Nav = () => {
+  const skills = useRef(null)
+  const projects = useRef(null)
+  const contact = useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    })
+  }
+
   const links = [
-    { name: 'About', to: '/about' },
-    { name: 'Skills', to: '/skills' },
-    { name: 'Projects', to: '/projects' },
-    { name: 'Contact', to: '/contact' },
+    { name: 'Skills', section: skills },
+    { name: 'Projects', section: projects },
+    { name: 'Contact', section: contact },
   ]
 
   return (
@@ -13,29 +23,32 @@ export const Nav = () => {
       <div className='bg-emerald-600 ml-4 w-8 h-8'></div>
       <div className='px-4 md:hidden'>
         <svg
-          className='w-8'
           xmlns='http://www.w3.org/2000/svg'
-          class='h-6 w-6'
+          className='h-8 w-8'
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
-          stroke-width='2'
+          strokeWidth='2'
         >
           <path
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeLinecap='round'
+            strokeLinejoin='round'
             d='M4 6h16M4 12h16M4 18h16'
           />
         </svg>
       </div>
-      <nav className='hidden md:inline-flex justify-between'>
-        {links.map((link, i) => (
-          <Link key={i} href={link.to} passHref>
-            <a className='p-4 text-zinc-800 hover:text-emerald-600'>
+      <nav className='hidden md:flex '>
+        <ul className='md:inline-flex md:justify-between'>
+          {links.map((link, i) => (
+            <li
+              key={i}
+              className='mx-4 cursor-pointer text-zinc-800 hover:text-emerald-600'
+              onClick={() => scrollToSection(link.section)}
+            >
               {link.name}
-            </a>
-          </Link>
-        ))}
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   )

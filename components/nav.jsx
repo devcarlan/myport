@@ -19,6 +19,7 @@ export const Nav = () => {
         <Image
           src={logos[Math.floor(Math.random() * logos.length)]}
           layout='intrinsic'
+          alt="Carlan's Logo"
         />
       </div>
       <nav className='hidden md:flex '>

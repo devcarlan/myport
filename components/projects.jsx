@@ -8,7 +8,10 @@ export const Projects = () => {
     { name: 'Dare 2 Care Outreach', image: d2c },
   ]
   return (
-    <div className='mt-12 px-4 container mx-auto md:max-w-5xl md:mt-24'>
+    <div
+      className='mt-12 px-4 container mx-auto md:max-w-5xl md:mt-24'
+      id='projects'
+    >
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Projects
       </h3>

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import Link from 'next/link'
 
 export const Nav = () => {
   const scrollToSection = (elementRef) => {
@@ -8,7 +8,11 @@ export const Nav = () => {
     })
   }
 
-  const links = [{ name: 'Skills' }, { name: 'Projects' }, { name: 'Contact' }]
+  const links = [
+    { name: 'Skills', url: '#skills' },
+    { name: 'Projects', url: '#projects' },
+    { name: 'Contact', url: '#contact' },
+  ]
 
   return (
     <div className='inline-flex min-w-full justify-between items-center py-4'>
@@ -35,9 +39,10 @@ export const Nav = () => {
             <li
               key={i}
               className='mx-4 cursor-pointer text-zinc-800 hover:text-emerald-600'
-              onClick={() => scrollToSection(link.section)}
             >
-              {link.name}
+              <Link href={link.url} passHref>
+                <a>{link.name}</a>
+              </Link>
             </li>
           ))}
         </ul>

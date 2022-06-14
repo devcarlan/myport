@@ -26,6 +26,7 @@ export const Projects = () => {
               layout='intrinsic'
               width='500'
               height='500'
+              alt={project.name}
             />
             <p className='mt-8 text-lg font-bold'>{project.name}</p>
           </div>

@@ -35,6 +35,7 @@ export const Skills = () => {
               layout='intrinsic'
               width='150'
               height='150'
+              alt={skill.name}
             />
             <p className='mt-4'>{skill.name}</p>
           </div>

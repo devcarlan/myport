@@ -5,7 +5,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>Carlan Henry</title>
         <meta name='description' content={desc} />
       </Head>
       <body>

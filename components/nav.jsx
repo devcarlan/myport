@@ -1,37 +1,25 @@
+import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import logo2 from '../components/shared/imgs/chblaka.png'
+import logo3 from '../components/shared/imgs/chcart.png'
 
 export const Nav = () => {
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: 'smooth',
-    })
-  }
-
   const links = [
     { name: 'Skills', url: '#skills' },
     { name: 'Projects', url: '#projects' },
     { name: 'Contact', url: '#contact' },
   ]
 
+  const logos = [logo2, logo3]
+
   return (
     <div className='inline-flex min-w-full justify-between items-center py-4'>
-      <div className='bg-emerald-600 ml-4 w-8 h-8'></div>
-      <div className='px-4 md:hidden'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          className='h-8 w-8'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-          strokeWidth='2'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            d='M4 6h16M4 12h16M4 18h16'
-          />
-        </svg>
+      <div className='mx-auto md:ml-4'>
+        <Image
+          src={logos[Math.floor(Math.random() * logos.length)]}
+          layout='intrinsic'
+        />
       </div>
       <nav className='hidden md:flex '>
         <ul className='md:inline-flex md:justify-between'>

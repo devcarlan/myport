@@ -17,10 +17,7 @@ export const Projects = () => {
       </h3>
       <div className='flex flex-col pt-8 justify-between md:flex-row md:pt-16'>
         {projects.map((project, i) => (
-          <div
-            key={i}
-            className='m-4 pb-2 flex flex-col items-center shadow-lg'
-          >
+          <div key={i} className='m-4 flex flex-col items-center shadow-lg'>
             <Image
               src={project.image}
               layout='intrinsic'
@@ -28,7 +25,9 @@ export const Projects = () => {
               height='500'
               alt={project.name}
             />
-            <p className='mt-8 text-lg font-bold'>{project.name}</p>
+            <div className='w-full py-4 bg-gray-200 flex flex-col justify-center items-center text-center'>
+              <p className='text-lg font-bold'>{project.name}</p>
+            </div>
           </div>
         ))}
       </div>

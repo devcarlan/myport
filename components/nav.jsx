@@ -1,14 +1,13 @@
 import { useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import logo2 from '../components/shared/imgs/chblaka.png'
 import logo3 from '../components/shared/imgs/chcart.png'
 
 export const Nav = () => {
   const links = [
-    { name: 'Skills', url: '#skills' },
-    { name: 'Projects', url: '#projects' },
-    { name: 'Contact', url: '#contact' },
+    { name: 'Skills', url: '/#skills' },
+    { name: 'Projects', url: '/#projects' },
+    { name: 'Contact', url: '/#contact' },
   ]
 
   const logos = [logo2, logo3]
@@ -30,9 +29,7 @@ export const Nav = () => {
               key={i}
               className='mx-4 cursor-pointer text-zinc-800 hover:text-emerald-600'
             >
-              <Link href={link.url} passHref>
-                <a>{link.name}</a>
-              </Link>
+              <a href={link.url}>{link.name}</a>
             </li>
           ))}
         </ul>

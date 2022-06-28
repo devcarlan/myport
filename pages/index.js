@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Carlan Henry</title>
+        <meta name='description' content="Carlan Henry's Portfolio Website" />
       </Head>
       <div className='bg-gray-200 max-w-screen-xl mx-auto'>
         <Nav />

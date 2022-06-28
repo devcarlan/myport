@@ -15,12 +15,14 @@ export const Nav = () => {
   return (
     <div className='inline-flex min-w-full justify-between items-center py-4'>
       <div className='mx-auto md:ml-4'>
-        <Image
-          src={logos[Math.floor(Math.random() * logos.length)]}
-          layout='intrinsic'
-          alt="Carlan's Logo"
-          quality='100'
-        />
+        <a href='/'>
+          <Image
+            src={logos[Math.floor(Math.random() * logos.length)]}
+            layout='intrinsic'
+            alt="Carlan's Logo"
+            quality='100'
+          />
+        </a>
       </div>
       <nav className='hidden md:flex '>
         <ul className='md:inline-flex md:justify-between'>

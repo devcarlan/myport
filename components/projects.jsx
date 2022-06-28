@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import ams from '../components/shared/imgs/amsvans.jpg'
 import d2c from '../components/shared/imgs/d2c.jpg'
+import cpw from '../components/shared/imgs/cpw.jpg'
 
 export const Projects = () => {
   const projects = [
     { name: 'AMSVans', image: ams },
     { name: 'Dare 2 Care Outreach', image: d2c },
+    { name: 'Champion Pressure Washing', image: cpw },
   ]
   return (
     <div

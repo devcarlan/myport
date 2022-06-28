@@ -16,14 +16,16 @@ export const Nav = () => {
   return (
     <div className='inline-flex min-w-full justify-between items-center py-4'>
       <div className='mx-auto md:ml-4'>
-        <a href='/'>
-          <Image
-            src={logos[Math.floor(Math.random() * logos.length)]}
-            layout='intrinsic'
-            alt="Carlan's Logo"
-            quality='100'
-          />
-        </a>
+        <Link href='/'>
+          <a>
+            <Image
+              src={logos[Math.floor(Math.random() * logos.length)]}
+              layout='intrinsic'
+              alt="Carlan's Logo"
+              quality='100'
+            />
+          </a>
+        </Link>
       </div>
       <nav className='hidden md:flex '>
         <ul className='md:inline-flex md:justify-between'>
@@ -32,9 +34,7 @@ export const Nav = () => {
               key={i}
               className='mx-4 cursor-pointer text-zinc-800 hover:text-emerald-600'
             >
-              <Link href={link.url}>
-                <a>{link.name}</a>
-              </Link>
+              <a href={link.url}>{link.name}</a>
             </li>
           ))}
         </ul>

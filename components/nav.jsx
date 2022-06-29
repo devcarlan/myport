@@ -6,9 +6,9 @@ import logo3 from '../components/shared/imgs/chcart.png'
 
 export const Nav = () => {
   const links = [
-    { name: 'Skills', url: '#skills' },
-    { name: 'Projects', url: '#projects' },
-    { name: 'Contact', url: '#contact' },
+    { name: 'Skills', url: '/#skills' },
+    { name: 'Projects', url: '/#projects' },
+    { name: 'Contact', url: '/#contact' },
   ]
 
   const logos = [logo2, logo3]

@@ -1,5 +1,11 @@
+import ProjectLayout from '../../components/layouts/projectlayout'
+
 const D2C = () => {
-  return <h1>Dare 2 Care Outreach</h1>
+  return (
+    <ProjectLayout>
+      <h1>Dare 2 Care Outreach</h1>
+    </ProjectLayout>
+  )
 }
 
 export default D2C

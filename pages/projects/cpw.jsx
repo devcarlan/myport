@@ -1,5 +1,11 @@
+import ProjectLayout from '../../components/layouts/projectlayout'
+
 const CPW = () => {
-  return <h1>Champion Pressure Washing</h1>
+  return (
+    <ProjectLayout>
+      <h1>Champion Pressure Washing</h1>
+    </ProjectLayout>
+  )
 }
 
 export default CPW

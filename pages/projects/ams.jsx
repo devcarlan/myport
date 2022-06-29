@@ -1,5 +1,11 @@
+import ProjectLayout from '../../components/layouts/projectlayout'
+
 const AMS = () => {
-  return <h1>AMS Vans</h1>
+  return (
+    <ProjectLayout>
+      <h1>AMS Vans</h1>
+    </ProjectLayout>
+  )
 }
 
 export default AMS

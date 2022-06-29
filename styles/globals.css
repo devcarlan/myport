@@ -29,6 +29,6 @@
   }
 
   .wrapper {
-    @apply max-w-screen-xl mx-auto drop-shadow-md  bg-slate-100;
+    @apply max-w-screen-xl h-full mx-auto drop-shadow-md  bg-slate-100;
   }
 }

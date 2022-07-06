@@ -6,7 +6,13 @@ const AMS = () => {
           AMS Vans
         </h1>
       </div>
-      <div></div>
+      <div className='container pt-4 px-4 m-auto md:max-w-5xl'>
+        <p>Visit Site: Link</p>
+        <p>Technologies Used: Wordpress</p>
+        <p>Languages Used: HTML, CSS, PHP, JavaScript</p>
+        <p>My Role:</p>
+        <p>Visit Site</p>
+      </div>
     </>
   )
 }

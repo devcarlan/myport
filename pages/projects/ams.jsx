@@ -2,7 +2,7 @@ const AMS = () => {
   return (
     <>
       <div className='h-[500px] flex flex-col items-center justify-center bg-ams text-white'>
-        <h1 className='text-7xl after:block after:content-[""] after:border-4 after:border-emerald-600 after:w-2/5 after:m-auto'>
+        <h1 className='text-7xl after:block after:content-[""] after:border-4 after:border-emerald-600 after:w-2/4 after:m-auto'>
           AMS Vans
         </h1>
       </div>
@@ -23,6 +23,11 @@ const AMS = () => {
         <p className='m-6 text-lg md:mx-2 md:my-4'>
           <span className='font-semibold'>Languages:</span> HTML, CSS, PHP,
           JavaScript
+        </p>
+        <p className='m-6 text-lg md:mx-2 md:my-4'>
+          <span className='font-semibold'>Description:</span> Website for the
+          wheelchair van company AMS Vans. Built with WordPress and deployed on
+          AWS.
         </p>
         <p className='m-6 text-lg md:mx-2 md:mt-4 md:mb-2'>
           <span className='font-semibold'>My Role: </span>

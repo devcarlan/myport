@@ -13,6 +13,7 @@ const CPW = () => {
             className='text-emerald-600 hover:text-emerald-400'
             href='https://cpw.vercel.app'
             target='_blank'
+            rel='noreferrer'
           >
             Champion Pressure Washing
           </a>

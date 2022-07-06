@@ -13,6 +13,7 @@ const D2C = () => {
             className='text-emerald-600 hover:text-emerald-400'
             href='https://www.dare2careoutreach.org'
             target='_blank'
+            rel='noreferrer'
           >
             Dare 2 Care Outreach
           </a>

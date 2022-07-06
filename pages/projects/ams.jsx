@@ -13,6 +13,7 @@ const AMS = () => {
             className='text-emerald-600 hover:text-emerald-400'
             href='https://www.amsvans.com'
             target='_blank'
+            rel='noreferrer'
           >
             AMS Vans
           </a>

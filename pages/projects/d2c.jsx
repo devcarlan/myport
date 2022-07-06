@@ -25,8 +25,8 @@ const D2C = () => {
         </p>
         <p className='m-6 text-lg md:mx-2 md:my-4'>
           <span className='font-semibold'>Description:</span> Website for the
-          none profit organization Dare 2 Care Outreach. Built with WordPress
-          and deployed on HostGator.
+          youth focused nonprofit Dare 2 Care Outreach. Built with WordPress and
+          deployed on HostGator.
         </p>
         <p className='m-6 text-lg md:mx-2 md:mt-4 md:mb-2'>
           <span className='font-semibold'>My Role: </span>

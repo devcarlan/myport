@@ -14,9 +14,6 @@ export default function Home() {
         <title>Carlan Henry</title>
         <meta name='description' content="Carlan Henry's Portfolio Website" />
       </Head>
-      <div className='bg-gray-200 max-w-screen-xl mx-auto'>
-        <Nav />
-      </div>
       <div className='wrapper'>
         <Intro />
         <Skills />
@@ -25,9 +22,6 @@ export default function Home() {
         <div className='md:hidden'>
           <Footer />
         </div>
-      </div>
-      <div className='hidden max-w-screen-xl mx-auto md:block'>
-        <Footer />
       </div>
     </>
   )

@@ -7,7 +7,12 @@ const Layout = ({ children }) => {
       <div className='bg-gray-200 max-w-screen-xl mx-auto'>
         <Nav />
       </div>
-      <div className='wrapper'>{children}</div>
+      <div className='wrapper'>
+        {children}
+        <div className='md:hidden'>
+          <Footer />
+        </div>
+      </div>
       <div className='hidden max-w-screen-xl mx-auto md:block'>
         <Footer />
       </div>

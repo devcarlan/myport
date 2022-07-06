@@ -1,7 +1,7 @@
 import { Nav } from '../nav'
 import { Footer } from '../footer'
 
-const ProjectLayout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <div className='bg-gray-200 max-w-screen-xl mx-auto'>
@@ -15,4 +15,4 @@ const ProjectLayout = ({ children }) => {
   )
 }
 
-export default ProjectLayout
+export default Layout

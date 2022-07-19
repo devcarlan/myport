@@ -27,7 +27,7 @@ export const Nav = () => {
 
   return (
     <>
-      <div className='inline-flex min-w-full justify-between items-center py-4'>
+      <div className='inline-flex min-w-full justify-between items-center md:py-4'>
         <div className='ml-4'>
           <Link href='/'>
             <a>
@@ -53,7 +53,7 @@ export const Nav = () => {
           </ul>
         </nav>
         <div className='mr-4 md:hidden' onClick={handleClick}>
-          <FaBars size={30} />
+          <FaBars size={25} className='hover:cursor-pointer' />
         </div>
       </div>
       <div
@@ -82,7 +82,7 @@ export const Nav = () => {
               </a>
             </Link>
             <div onClick={onClose}>
-              <VscClose size={30} />
+              <VscClose size={30} className='hover:cursor-pointer' />
             </div>
           </div>
           <nav className='mt-4'>

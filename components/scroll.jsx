@@ -31,7 +31,11 @@ export const Scroll = () => {
       <BsFillArrowUpCircleFill
         size={50}
         onClick={scrollToTop}
-        className={visible ? 'opacity-100' : 'opacity-0'}
+        className={
+          visible
+            ? 'opacity-100 text-emerald-600 ease-in transition-opacity duration-500'
+            : 'opacity-0 text-emerald-600 transition-opacity duration-500'
+        }
       />
     </div>
   )

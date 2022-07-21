@@ -1,5 +1,6 @@
 import { Nav } from '../nav'
 import { Footer } from '../footer'
+import { Scroll } from '../scroll'
 
 const Layout = ({ children }) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
         <div className='hidden max-w-screen-xl mx-auto md:block'>
           <Footer />
         </div>
+        <Scroll />
       </div>
     </>
   )

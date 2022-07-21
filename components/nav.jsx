@@ -17,12 +17,8 @@ export const Nav = () => {
 
   const [showMenu, setShowMenu] = useState(false)
 
-  const handleClick = () => {
-    setShowMenu(true)
-  }
-
-  const onClose = () => {
-    setShowMenu(false)
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu)
   }
 
   return (
@@ -52,7 +48,7 @@ export const Nav = () => {
             ))}
           </ul>
         </nav>
-        <div className='mr-4 md:hidden' onClick={handleClick}>
+        <div className='mr-4 md:hidden' onClick={handleShowMenu}>
           <FaBars size={25} className='hover:cursor-pointer' />
         </div>
       </div>
@@ -60,12 +56,16 @@ export const Nav = () => {
         className={
           showMenu
             ? 'fixed left-0 top-0 w-full h-screen bg-black/70 z-[25]'
-            : 'hidden'
+            : ''
         }
-        onClick={onClose}
+        onClick={handleShowMenu}
       >
         <div
-          className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen z-50 bg-[#ecf0f3] p-10 ease-in duration-500'
+          className={
+            showMenu
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen z-50 bg-slate-100 p-10 ease-in duration-500'
+              : 'fixed left-[-100%] top-0 w-[75%] p-10 ease-out duration-500'
+          }
           onClick={(e) => e.stopPropagation()}
         >
           <div className='flex items-center justify-between'>
@@ -81,7 +81,7 @@ export const Nav = () => {
                 />
               </a>
             </Link>
-            <div onClick={onClose}>
+            <div onClick={handleShowMenu}>
               <VscClose size={30} className='hover:cursor-pointer' />
             </div>
           </div>

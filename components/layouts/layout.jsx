@@ -12,11 +12,11 @@ const Layout = ({ children }) => {
           <div className='md:hidden'>
             <Footer />
           </div>
+          <Scroll />
         </div>
         <div className='hidden max-w-screen-xl mx-auto md:block'>
           <Footer />
         </div>
-        <Scroll />
       </div>
     </>
   )

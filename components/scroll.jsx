@@ -27,9 +27,9 @@ export const Scroll = () => {
   }, [])
 
   return (
-    <div className='fixed bottom-2 right-2'>
+    <div className='sticky flex justify-end bottom-2 right-2 mr-2 hover:cursor-pointer'>
       <BsFillArrowUpCircleFill
-        size={25}
+        size={50}
         onClick={scrollToTop}
         className={visible ? 'opacity-100' : 'opacity-0'}
       />

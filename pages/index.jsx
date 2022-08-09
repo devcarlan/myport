@@ -7,6 +7,8 @@ import { Contact } from '../components/contact'
 import ScrollContext from '../context/scroll/ScrollContext'
 
 export default function Home() {
+  const { skills, projects, contact } = useContext(ScrollContext)
+
   return (
     <>
       <Head>
@@ -14,9 +16,9 @@ export default function Home() {
         <meta name='description' content="Carlan Henry's Portfolio Website" />
       </Head>
       <Intro />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Skills ref={skills.current} />
+      <Projects ref={projects.current} />
+      <Contact ref={contact.current} />
     </>
   )
 }

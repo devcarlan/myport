@@ -4,7 +4,7 @@ import ams from '../components/shared/imgs/amsvans.jpg'
 import d2c from '../components/shared/imgs/d2c.jpg'
 import cpw from '../components/shared/imgs/cpw.jpg'
 
-export const Projects = () => {
+export const Projects = ({ ref }) => {
   const projects = [
     { name: 'AMSVans', image: ams, link: '/projects/ams' },
     { name: 'Dare 2 Care Outreach', image: d2c, link: '/projects/d2c' },
@@ -14,6 +14,7 @@ export const Projects = () => {
     <div
       className='mt-12 px-4 container mx-auto md:max-w-5xl md:mt-24'
       id='projects'
+      ref={ref}
     >
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Projects

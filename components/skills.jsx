@@ -6,7 +6,7 @@ import react from '../components/shared/imgs/react.jpg'
 import tw from '../components/shared/imgs/tailwind-css.jpg'
 import wp from '../components/shared/imgs/wordpress-icon.jpg'
 
-export const Skills = ({ ref }) => {
+export const Skills = () => {
   const skills = [
     { name: 'CSS3', image: css },
     { name: 'HTML5', image: html },
@@ -20,7 +20,6 @@ export const Skills = ({ ref }) => {
     <div
       className='mt-12 px-4 container mx-auto md:max-w-5xl md:mt-24'
       id='skills'
-      ref={ref}
     >
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Skills

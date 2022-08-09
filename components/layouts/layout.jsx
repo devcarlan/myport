@@ -1,4 +1,3 @@
-import { ScrollProvider } from '../../context/scroll/ScrollContext'
 import { Nav } from '../nav'
 import { Footer } from '../footer'
 import { Scroll } from '../scroll'
@@ -6,21 +5,19 @@ import { Scroll } from '../scroll'
 const Layout = ({ children }) => {
   return (
     <>
-      <ScrollProvider>
-        <div className='bg-gray-200 max-w-screen-xl mx-auto'>
-          <Nav />
-          <div className='wrapper'>
-            {children}
-            <div className='md:hidden'>
-              <Footer />
-            </div>
-            <Scroll />
-          </div>
-          <div className='hidden max-w-screen-xl mx-auto md:block'>
+      <div className='bg-gray-200 max-w-screen-xl mx-auto'>
+        <Nav />
+        <div className='wrapper'>
+          {children}
+          <div className='md:hidden'>
             <Footer />
           </div>
+          <Scroll />
         </div>
-      </ScrollProvider>
+        <div className='hidden max-w-screen-xl mx-auto md:block'>
+          <Footer />
+        </div>
+      </div>
     </>
   )
 }

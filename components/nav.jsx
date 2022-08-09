@@ -1,19 +1,16 @@
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { VscClose } from 'react-icons/vsc'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo2 from '../components/shared/imgs/chblaka.png'
 import logo3 from '../components/shared/imgs/chcart.png'
-import ScrollContext from '../context/scroll/ScrollContext'
 
 export const Nav = () => {
-  const { skills, projects, contact } = useContext(ScrollContext)
-
   const links = [
-    { name: 'Skills', url: '/#skills', ref: skills.current },
-    { name: 'Projects', url: '/#projects', ref: projects.current },
-    { name: 'Contact', url: '/#contact', ref: contact.current },
+    { name: 'Skills', url: '/#skills' },
+    { name: 'Projects', url: '/#projects' },
+    { name: 'Contact', url: '/#contact' },
   ]
 
   const logos = [logo2, logo3]
@@ -23,16 +20,6 @@ export const Nav = () => {
   const handleShowMenu = () => {
     setShowMenu(!showMenu)
   }
-
-  const handleScroll = (ref) => {
-    window.scrollTo({
-      top: ref.offsetTop,
-      left: 0,
-      behavior: 'smooth',
-    })
-  }
-
-  console.log(skills.current, projects.current, contact.current)
 
   return (
     <>
@@ -56,7 +43,7 @@ export const Nav = () => {
                 key={i}
                 className='mx-4 cursor-pointer text-zinc-800 hover:text-emerald-600'
               >
-                <a onClick={() => handleScroll(link.ref)}>{link.name}</a>
+                <a href={link.url}>{link.name}</a>
               </li>
             ))}
           </ul>

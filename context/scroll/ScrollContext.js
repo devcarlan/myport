@@ -1,15 +1,13 @@
-import { createContext, useRef, useReducer } from 'react'
+import { createContext, useRef, useState } from 'react'
 
 const ScrollContext = createContext()
 
 export const ScrollProvider = ({ children }) => {
-  const initState = {
-    skillsRef: useRef(null),
-    projectsRef: useRef(null),
-    contactRef: useRef(null),
-  }
+  const [skillsRef, projectsRef, contactRef] = useRef(null)
 
-  const [state, dispatch] = useReducer(scrollReducer, initState)
+  const [lie, setLie] = useState(false)
 
-  return <ScrollContext.Provider value={{}}>{children}</ScrollContext.Provider>
+  return <ScrollContext.Provider value={lie}>{children}</ScrollContext.Provider>
 }
+
+export default ScrollContext

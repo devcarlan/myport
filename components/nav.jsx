@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import ScrollContext from '../context/scroll/ScrollContext'
 import { FaBars } from 'react-icons/fa'
 import { VscClose } from 'react-icons/vsc'
 import Link from 'next/link'
@@ -7,6 +8,8 @@ import logo2 from '../components/shared/imgs/chblaka.png'
 import logo3 from '../components/shared/imgs/chcart.png'
 
 export const Nav = () => {
+  const lie = useContext(ScrollContext)
+
   const links = [
     { name: 'Skills', url: '/#skills' },
     { name: 'Projects', url: '/#projects' },
@@ -20,6 +23,16 @@ export const Nav = () => {
   const handleShowMenu = () => {
     setShowMenu(!showMenu)
   }
+
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  //console.log(lie)
 
   return (
     <>

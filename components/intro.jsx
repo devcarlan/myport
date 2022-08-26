@@ -12,12 +12,12 @@ export const Intro = () => {
         <span className='text-emerald-600'>Web Developer</span>
       </h2>
       <p className='px-5 text-lg mx-auto tracking-wide leading-8 md:m-4 md:max-w-4xl md:px-0 md:leading-7 '>
-        &#8212; with experience building fast, functional websites to boost lead
-        generation as well as gaining a larger web presence. Technologies like
-        Reactjs, AdobeXD, and Visual Studio Code are my go-tos for building,
-        designing, and coding apps for the web. Recently my focus has been on
-        Next.js and Tailwind CSS for reliably building fast, responsive, mobile
-        friendly, and easily scalable websites.
+        &#8212; with experience building fast, functional websites as solutions
+        for increasing engagement, and establishing a strong web presence.
+        Technologies like Reactjs, AdobeXD, and Visual Studio Code are my go-tos
+        for building, designing, and coding apps for the web. Recently my focus
+        has been on Next.js and Tailwind CSS for reliably building fast,
+        responsive, mobile friendly, and easily scalable web apps.
       </p>
     </div>
   )

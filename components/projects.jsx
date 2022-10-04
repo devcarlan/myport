@@ -33,7 +33,7 @@ export const Projects = () => {
       <h3 className='text-2xl border-solid border-l-8 border-l-emerald-600 px-2'>
         Projects
       </h3>
-      <div className='flex flex-col pt-8 justify-between md:flex-row md:pt-16'>
+      <div className='flex flex-col pt-8 items-center md:flex-row md:flex-wrap md:justify-center md:pt-16'>
         {projects.map((project, i) => (
           <ProjectItem
             key={i}

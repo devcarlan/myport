@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { SkillPill } from './skillpill'
 
 export const ProjectItem = ({ name, link, image, skills }) => {
-  console.log(image)
   return (
     <div
       className={`m-4 flex flex-col items-center shadow-md hover:cursor-pointer`}

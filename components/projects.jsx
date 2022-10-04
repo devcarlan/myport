@@ -9,7 +9,7 @@ export const Projects = () => {
       name: 'Casual Streams',
       image: 'bg-tilecasuals',
       link: '/projects/casualstreams',
-      tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript'],
+      tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
     },
     {
       name: 'Champion Pressure Washing',

@@ -57,5 +57,13 @@ export const SkillPill = ({ skill }) => {
           {skill}
         </div>
       )
+    case 'Tailwind CSS':
+      return (
+        <div
+          className={`m-1 flex items-center px-2 bg-sky-400 rounded-full text-sm text-white text-center tracking-wide`}
+        >
+          {skill}
+        </div>
+      )
   }
 }

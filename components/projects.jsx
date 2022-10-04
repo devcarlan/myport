@@ -6,6 +6,12 @@ import cpw from '../components/shared/imgs/cpw.jpg'
 export const Projects = () => {
   const projects = [
     {
+      name: 'Casual Streams',
+      image: 'bg-tilecasuals',
+      link: '/projects/casual-streams',
+      tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript'],
+    },
+    {
       name: 'Champion Pressure Washing',
       image: 'bg-tilecpw',
       link: '/projects/cpw',

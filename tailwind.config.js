@@ -10,11 +10,11 @@ module.exports = {
         d2c: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../components/shared/imgs/d2cproject.jpg')",
         cpw: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../components/shared/imgs/cpwproject.jpg')",
         tileams:
-          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../components/shared/imgs/amsvans.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../components/shared/imgs/amsvans.jpg')",
         tiled2c:
-          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../components/shared/imgs/d2c.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../components/shared/imgs/d2c.jpg')",
         tilecpw:
-          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../components/shared/imgs/cpw.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../components/shared/imgs/cpw.jpg')",
       },
     },
   },

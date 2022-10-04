@@ -6,11 +6,12 @@ import cpw from '../components/shared/imgs/cpw.jpg'
 export const Projects = () => {
   const projects = [
     {
-      name: 'AMSVans',
-      image: 'bg-tileams',
-      link: '/projects/ams',
-      tech: ['WordPress', 'PHP'],
+      name: 'Champion Pressure Washing',
+      image: 'bg-tilecpw',
+      link: '/projects/cpw',
+      tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript'],
     },
+
     {
       name: 'Dare 2 Care Outreach',
       image: 'bg-tiled2c',
@@ -18,10 +19,10 @@ export const Projects = () => {
       tech: ['WordPress', 'PHP'],
     },
     {
-      name: 'Champion Pressure Washing',
-      image: 'bg-tilecpw',
-      link: '/projects/cpw',
-      tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript'],
+      name: 'AMSVans',
+      image: 'bg-tileams',
+      link: '/projects/ams',
+      tech: ['WordPress', 'PHP'],
     },
   ]
   return (

@@ -8,9 +8,12 @@ export const ProjectItem = ({ name, link, image, skills }) => {
       className={`m-4 flex flex-col items-center shadow-md hover:cursor-pointer`}
     >
       <Link href={link}>
-        <div className={`p-4 w-64 h-64 flex flex-col justify-between ${image}`}>
-          <p className='text-lg font-bold text-white'>{name}</p>
-          <div className='flex flex-wrap items-center'>
+        <div
+          className={`p-4 w-72 h-72 rounded-lg flex flex-col justify-center items-center ${image}`}
+        >
+          <p className='text-lg font-bold text-center text-white'>{name}</p>
+
+          <div className='mt-1 flex flex-wrap items-center'>
             {skills.map((skill, i) => (
               <SkillPill skill={skill} />
             ))}

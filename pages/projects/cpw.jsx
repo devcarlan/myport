@@ -1,6 +1,10 @@
+import Head from 'next/head'
 const CPW = () => {
   return (
     <>
+      <Head>
+        <title>Project: Champion Pressure Washing</title>
+      </Head>
       <div className='h-[500px] flex flex-col items-center justify-center bg-cpw text-center text-white'>
         <h1 className='text-7xl after:block after:content-[""] after:border-4 after:border-emerald-600 after:w-1/4 after:m-auto'>
           Champion Pressure Washing

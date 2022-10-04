@@ -1,6 +1,11 @@
+import Head from 'next/head'
+
 const CasualStreams = () => {
   return (
     <>
+      <Head>
+        <title>Project: Casual Streams</title>
+      </Head>
       <div className='h-[500px] flex flex-col items-center justify-center bg-casuals text-white'>
         <h1 className='text-7xl after:block after:content-[""] after:border-4 after:border-emerald-600 after:w-2/4 after:m-auto'>
           Casual Streams

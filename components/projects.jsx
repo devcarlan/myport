@@ -7,17 +7,17 @@ export const Projects = () => {
   const projects = [
     {
       name: 'AMSVans',
-      image: 'tileams',
+      image: 'bg-tileams',
       link: '/projects/ams',
     },
     {
       name: 'Dare 2 Care Outreach',
-      image: 'tiled2c',
+      image: 'bg-tiled2c',
       link: '/projects/d2c',
     },
     {
       name: 'Champion Pressure Washing',
-      image: 'tilecpw',
+      image: 'bg-tilecpw',
       link: '/projects/cpw',
     },
   ]

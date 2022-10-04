@@ -14,7 +14,7 @@ export const ProjectItem = ({ name, link, image, skills }) => {
 
           <div className='mt-1 flex flex-wrap items-center'>
             {skills.map((skill, i) => (
-              <SkillPill skill={skill} />
+              <SkillPill key={i} skill={skill} />
             ))}
           </div>
         </div>

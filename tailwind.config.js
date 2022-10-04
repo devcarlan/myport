@@ -15,6 +15,8 @@ module.exports = {
           "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../components/shared/imgs/d2c.jpg')",
         tilecpw:
           "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../components/shared/imgs/cpw.jpg')",
+        tilecasuals:
+          "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../components/shared/imgs/casualstreams.jpg')",
       },
     },
   },

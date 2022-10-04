@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import { SkillPill } from './skillpill'
 
-export const ProjectItem = ({ name, link, image }) => {
+export const ProjectItem = ({ name, link, image, skills }) => {
   console.log(image)
   return (
     <div
@@ -9,7 +10,11 @@ export const ProjectItem = ({ name, link, image }) => {
       <Link href={link}>
         <div className={`p-4 w-64 h-64 flex flex-col justify-between ${image}`}>
           <p className='text-lg font-bold text-white'>{name}</p>
-          <div className='flex items-center'></div>
+          <div className='flex flex-wrap items-center'>
+            {skills.map((skill, i) => (
+              <SkillPill skill={skill} />
+            ))}
+          </div>
         </div>
       </Link>
     </div>

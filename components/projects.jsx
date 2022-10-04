@@ -9,16 +9,19 @@ export const Projects = () => {
       name: 'AMSVans',
       image: 'bg-tileams',
       link: '/projects/ams',
+      tech: ['WordPress', 'PHP'],
     },
     {
       name: 'Dare 2 Care Outreach',
       image: 'bg-tiled2c',
       link: '/projects/d2c',
+      tech: ['WordPress', 'PHP'],
     },
     {
       name: 'Champion Pressure Washing',
       image: 'bg-tilecpw',
       link: '/projects/cpw',
+      tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript'],
     },
   ]
   return (
@@ -36,6 +39,7 @@ export const Projects = () => {
             link={project.link}
             name={project.name}
             image={project.image}
+            skills={project.tech}
           />
         ))}
       </div>

@@ -1,9 +1,12 @@
+import { useRouter } from 'next/router'
 import { ProjectItem } from './shared/projectitem'
 import ams from '../components/shared/imgs/amsvans.jpg'
 import d2c from '../components/shared/imgs/d2c.jpg'
 import cpw from '../components/shared/imgs/cpw.jpg'
 
 export const Projects = () => {
+  const router = useRouter()
+
   const projects = [
     {
       name: 'Casual Streams',
@@ -54,6 +57,15 @@ export const Projects = () => {
             skills={project.tech}
           />
         ))}
+      </div>
+      <div className='mt-8 flex justify-center'>
+        <button
+          type='button'
+          className='px-4 py-2 bg-emerald-500 rounded-full bg-gradient-to-b hover:from-emerald-500 hover:to-emerald-700'
+          onClick={() => router.push('/projects')}
+        >
+          <span className='text-md text-white'>View More</span>
+        </button>
       </div>
     </div>
   )

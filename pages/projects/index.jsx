@@ -48,7 +48,6 @@ function Projects() {
           visit the project's page where you can view additional details as well
           as check out the live demo.
         </p>
-
         <div className='mt-4 flex flex-col items-center md:flex-row md:flex-wrap md:justify-center md:mt-8'>
           {projects.map((project, i) => (
             <ProjectItem

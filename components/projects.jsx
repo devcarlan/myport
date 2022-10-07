@@ -12,12 +12,17 @@ export const Projects = () => {
       tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
     },
     {
+      name: 'GitHub Finder',
+      image: 'bg-tilegit',
+      link: '/projects/githubfinder',
+      tech: ['React', 'HTML', 'Tailwind CSS', 'JavaScript'],
+    },
+    {
       name: 'Champion Pressure Washing',
       image: 'bg-tilecpw',
       link: '/projects/cpw',
       tech: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript'],
     },
-
     {
       name: 'Dare 2 Care Outreach',
       image: 'bg-tiled2c',

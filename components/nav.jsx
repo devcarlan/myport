@@ -12,6 +12,12 @@ export const Nav = () => {
     { name: 'Projects', url: '/projects' },
     { name: 'Contact', url: '/#contact' },
   ]
+  const sidelinks = [
+    { name: 'Home', url: '/' },
+    { name: 'Skills', url: '/#skills' },
+    { name: 'Projects', url: '/projects' },
+    { name: 'Contact', url: '/#contact' },
+  ]
 
   const logos = [logo2, logo3]
 
@@ -87,7 +93,7 @@ export const Nav = () => {
           </div>
           <nav className='mt-4'>
             <ul className='flex flex-col'>
-              {links.map((link, i) => (
+              {sidelinks.map((link, i) => (
                 <li
                   key={i}
                   className='my-4 text-lg cursor-pointer text-zinc-800 hover:text-emerald-600'
